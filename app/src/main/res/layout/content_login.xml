@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.energia.electra.geolocation.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Login"
+        android:id="@+id/TituloLogin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:textColor="#139eee"
+        android:textAlignment="center"
+        android:typeface="sans"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Usuario"
+        android:id="@+id/textViewUsuario"
+        android:layout_marginTop="70dp"
+        android:textColor="#050000"
+        android:textSize="30dp"
+        android:layout_below="@+id/TituloLogin"
+        android:layout_toLeftOf="@+id/TituloLogin"
+        android:layout_toStartOf="@+id/TituloLogin" />
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+
+        android:id="@+id/editTextUsuario"
+        android:layout_alignTop="@+id/textViewUsuario"
+        android:layout_marginLeft="190dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Password"
+        android:id="@+id/textView"
+        android:textColor="#050000"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textViewUsuario"
+        android:layout_alignStart="@+id/textViewUsuario" />
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+
+        android:id="@+id/editTextPasseord"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginLeft="190dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/ButtonLogin"
+        android:layout_below="@+id/editTextPasseord"
+        android:layout_alignLeft="@+id/buttonRegistro"
+        android:layout_alignStart="@+id/buttonRegistro"
+        android:layout_marginTop="45dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro"
+        android:id="@+id/buttonRegistro"
+        android:layout_below="@+id/ButtonLogin"
+
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
